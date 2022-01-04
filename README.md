@@ -35,3 +35,8 @@
 > *Take your time to find your place, but once you find out, don't back down on any pretense.*
 
 > *Never stop the griding.*
+
+### *Update Notes*
+#### *Added some animation elements, now the container slides in*
+#### *From line 168 to 177 of style.css*
+#### *They were very simple concepts, in the future I should make a guide here*
