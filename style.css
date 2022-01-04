@@ -24,12 +24,19 @@ body{
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+
+    animation-name: moveright;
+    animation-duration: 1s;
+    overflow: hidden;
 }
 
 h2 {
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
+
+    animation-name: moveright;
+    animation-duration: 1s;
 }
 
 h2::before {
@@ -71,6 +78,10 @@ h2::before {
 form{
     display: flex;
     flex-direction: column;
+
+    animation-name: moveright;
+    animation-duration: 1s;
+    overflow: hidden;
 }
 
 form input[type="submit"]{
@@ -96,6 +107,8 @@ form input[type="submit"]:hover {
     flex-direction: column;
     margin-top: 1rem;
 
+    animation-name: moveright;
+    animation-duration: 1s;
 }
 
 .footer span{
@@ -150,4 +163,15 @@ form input[type="submit"]:hover {
     background: rgb(145, 70, 255);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+}
+
+@keyframes moveright{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
